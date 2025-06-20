@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Housing Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #1a1a40;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery-item {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      padding: 12px;
+      font-weight: bold;
+      color: #003366;
+      background-color: #f0f0f0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Smart Housing Gallery</h1>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="images/photo1.jpg" alt="Housing Project 1">
+      <div class="caption">Image 1: Smart Apartment</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photo2.jpg" alt="Housing Project 2">
+      <div class="caption">Image 2: Modern Villa</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/photo3.jpg" alt="Housing Project 3">
+      <div class="caption">Image 3: Rental Block</div>
+    </div>
+  </div>
+ <a href="index.html" class="exit-button">⟵ Exit to Home</a>
+
+</body>
+</html>
+
+
+ 
